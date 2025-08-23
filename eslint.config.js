@@ -1,12 +1,12 @@
 // eslint.config.js
 
 // @ts-check
-import js from "@eslint/js";
-import react from "eslint-plugin-react-x";
-import tseslint from "typescript-eslint";
+import js from '@eslint/js';
+import react from 'eslint-plugin-react-x';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config({
-  files: ["**/*.ts", "**/*.tsx"],
+  files: ['**/*.ts', '**/*.tsx'],
   extends: [
     js.configs.recommended,
     tseslint.configs.recommended,
@@ -21,7 +21,7 @@ export default tseslint.config({
   },
   rules: {
     // Put rules you want to override here
-    "react-x/no-class-component": "warn",
-    "jsx-no-duplicate-props": "warn",
+    'react-x/no-class-component': 'warn',
+    'jsx-no-duplicate-props': 'warn',
   },
 });
